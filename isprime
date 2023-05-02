@@ -1,0 +1,18 @@
+function isPrime(num)
+  for i = 2, math.sqrt(num) do
+    if num % i == 0 then
+      return false
+    end
+  end
+  return true
+end
+
+function printPrimes(max)
+  for i = 2, max do
+    if isPrime(i) then
+      print(i)
+    end
+  end
+end
+
+printPrimes(20)
